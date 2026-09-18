@@ -1,16 +1,77 @@
-# React + Vite
+# iPhone 17 — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page inspirada na apresentação do iPhone 17, desenvolvida como projeto de portfólio para praticar a criação de interfaces modernas, responsivas e interativas com React e Tailwind CSS.
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **[Acessar o projeto]([COLOQUE-AQUI-O-LINK-DO-GITHUB-PAGES](https://fabioalx29.github.io/Projeto-React-Tailwind/))**
 
-## React Compiler
+## Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto apresenta uma interface moderna para divulgação do iPhone 17, explorando diferentes informações do dispositivo de forma visual e interativa.
 
-## Expanding the Oxlint configuration
+A proposta foi desenvolver uma experiência semelhante a uma página de apresentação de produto, com foco em design, responsividade, organização dos componentes e experiência do usuário.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Funcionalidades
+
+* Apresentação do iPhone 17
+* Exibição dos diferentes modelos
+* Seleção de cores
+* Seção de câmera
+* Informações sobre desempenho
+* Apresentação de características do aparelho
+* Interface responsiva
+* Navegação e interações com os elementos da página
+* Design moderno inspirado em páginas de produtos tecnológicos
+
+## Tecnologias utilizadas
+
+* **React**
+* **Tailwind CSS**
+* **JavaScript**
+* **HTML5**
+* **CSS3**
+* **Vite**
+* **Git**
+* **GitHub**
+
+## Conceitos praticados
+
+Durante o desenvolvimento, foram trabalhados conceitos como:
+
+* Componentização com React
+* Organização de interfaces
+* Responsividade
+* Estilização com Tailwind CSS
+* Gerenciamento de estados e interações
+* Estruturação de projetos React
+* Reutilização de componentes
+* Experiência e interface do usuário (UI/UX)
+
+## Estrutura do projeto
+
+```text
+src/
+├── components/
+├── assets/
+├── App.jsx
+├── main.jsx
+└── ...
+```
+
+## Objetivo
+
+Este projeto faz parte do meu processo de evolução como **Desenvolvedor Front-End**, buscando aprimorar minhas habilidades na criação de interfaces modernas e funcionais utilizando React.
+
+## Autor
+
+**Fábio Alexsander**
+
+Desenvolvedor Front-End
+
+* GitHub: [@Fabioalx29](https://github.com/Fabioalx29)
+* LinkedIn: [Fábio Alexsander](https://www.linkedin.com/in/fabio-alexsander-811b90358/)
+
+---
+
+⭐ Se você gostou do projeto, considere deixar uma estrela no repositório!
