@@ -46,34 +46,31 @@ function Colors() {
   );
 
   return (
-    <section
-      id="cores"
-      className="bg-black px-4 py-16 text-white sm:px-6 sm:py-20 lg:px-8 lg:py-28"
-    >
-      <div className="mx-auto w-full max-w-7xl">
-        <div className="mb-10 text-center sm:mb-16">
-          <h2 className="mb-4 text-3xl font-bold sm:text-5xl lg:text-6xl">
+    <section id="cores" className="bg-black py-20 px-6 text-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-bold mb-4">
             Escolha Sua Cor
           </h2>
 
-          <p className="text-base text-gray-400 sm:text-xl">
+          <p className="text-xl text-gray-400">
             Três lindos acabamentos em titânio
           </p>
         </div>
 
-        <div className="mb-10 flex justify-center sm:mb-12">
+        <div className="flex justify-center mb-12">
           <div className="relative w-full max-w-3xl">
-            <div className="flex min-h-[300px] items-center justify-center sm:min-h-[450px] lg:min-h-[500px]">
+            <div className="relative flex items-center justify-center min-h-[500px]">
               <img
                 src={selectedPhone.image}
                 alt={`iPhone 17 Pro ${selectedPhone.name}`}
-                className="h-auto max-h-[400px] w-full max-w-[280px] object-contain transition-all duration-500 sm:max-h-[550px] sm:max-w-[400px] lg:max-h-[600px] lg:max-w-[500px]"
+                className="max-w-full max-h-[600px] object-contain mx-auto transition-all duration-500"
               />
             </div>
 
-            <div className="absolute bottom-3 left-0 right-0 text-center sm:bottom-8">
-              <div className="inline-block rounded-full bg-black/60 px-5 py-3 backdrop-blur-md sm:px-8 sm:py-4">
-                <h3 className="text-lg font-semibold sm:text-2xl">
+            <div className="absolute bottom-8 left-0 right-0 text-center">
+              <div className="px-8 py-4 rounded-full backdrop-blur-md bg-black/60 inline-block">
+                <h3 className="text-2xl font-semibold">
                   {selectedPhone.name}
                 </h3>
               </div>
@@ -81,20 +78,20 @@ function Colors() {
           </div>
         </div>
 
-        <div className="mb-14 flex items-center justify-center gap-4 sm:mb-16 sm:gap-5">
+        <div className="flex justify-center items-center gap-5 mb-16">
           {colors.map((color) => (
             <button
               key={color.id}
               onClick={() => setSelectedColor(color.id)}
               aria-label={`Selecionar ${color.name}`}
-              className="cursor-pointer transition-all duration-300 hover:scale-110"
+              className="relative cursor-pointer transition-all duration-300 hover:scale-110"
             >
               <div
-                className={`h-12 w-12 rounded-full border-4 transition-all duration-300 sm:h-16 sm:w-16 ${
+                className={`w-16 h-16 rounded-full border-4 ${
                   color.colorClass
                 } ${
                   selectedColor === color.id
-                    ? "scale-110 border-white"
+                    ? "border-white scale-110"
                     : "border-gray-600"
                 }`}
               ></div>
@@ -102,37 +99,37 @@ function Colors() {
           ))}
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:mt-20 sm:gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20" id="modelo">
           {models.map((model, index) => (
             <div
               key={index}
-              className="rounded-3xl border border-gray-800 bg-gradient-to-br from-gray-900 to-transparent p-5 transition-all duration-300 hover:border-gray-600 sm:p-8 md:hover:scale-105"
+              className="bg-gradient-to-br from-gray-900 to-transparent rounded-3xl p-8 border border-gray-800 transition-all duration-300 hover:scale-105"
             >
-              <div className="mb-4 text-3xl sm:text-4xl">📱</div>
+              <div className="text-4xl mb-4">📱</div>
 
-              <h3 className="mb-3 text-xl font-bold sm:text-2xl">
+              <h3 className="text-2xl font-bold mb-3">
                 iPhone 17 {model.name}
               </h3>
 
-              <p className="mb-4 text-sm text-gray-400 sm:text-base">
+              <p className="text-gray-400 mb-4">
                 Tela de {model.screen}
               </p>
 
-              <ul className="space-y-2 text-sm text-gray-300 sm:text-base">
-                <li>Armazenamento: {model.storage}</li>
-                <li>Bateria: {model.battery}</li>
-                <li>Peso: {model.weight}</li>
+              <ul className="space-y-2 text-gray-300">
+                <li>{model.storage}</li>
+                <li>{model.battery}</li>
+                <li>{model.weight}</li>
               </ul>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center sm:mt-16">
-          <button className="w-full max-w-md cursor-pointer rounded-full bg-blue-700 px-6 py-4 text-base font-medium text-white shadow-md shadow-blue-500/50 transition-all duration-300 hover:scale-105 hover:bg-blue-800 sm:w-auto sm:px-8 sm:py-5 sm:text-lg">
+        <div className="text-center mt-16">
+          <button className="bg-blue-700 hover:bg-blue-800 cursor-pointer text-white px-8 py-5 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 mb-8 shadow-md shadow-blue-500/50">
             Compre Agora a partir de R$ 9.950,00
           </button>
 
-          <p className="mt-5 text-sm text-gray-400 sm:text-base">
+          <p className="text-gray-400">
             Ou em até 12x de R$ 829,17 sem juros
           </p>
         </div>
