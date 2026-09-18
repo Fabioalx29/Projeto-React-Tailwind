@@ -1,14 +1,24 @@
 function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden bg-black">
-      <div className="absolute top-18 bottom-0 right-0 left-0 z-0 flex justify-center">
+    <section className="relative flex min-h-[650px] h-screen items-center justify-center overflow-hidden bg-black px-4 sm:min-h-[700px]">
+      <div className="absolute inset-0 top-16 z-0 flex items-center justify-center">
         <img
           src={`${import.meta.env.BASE_URL}img/hero.jpg`}
-          className="w-[1200px] h-auto object-contain opacity-90"
+          className="h-auto w-[95%] max-w-[1200px] object-contain opacity-90 sm:w-[90%] lg:w-[85%]"
           alt="Imagem principal do iPhone"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/90"></div>
+      </div>
+
+      <div className="relative z-10 mt-auto mb-24 text-center sm:mb-20">
+        <h1 className="text-3xl font-bold sm:text-5xl lg:text-7xl">
+          Tecnologia que impressiona.
+        </h1>
+
+        <p className="mt-4 text-sm text-gray-300 sm:text-lg lg:text-xl">
+          Design, potência e inovação em um só lugar.
+        </p>
       </div>
 
       <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-bounce">
